@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>法援通 - 法律援助助手</title>
+<style>
+  body { margin: 0; font-family: sans-serif; background: #f5f7fa; }
+  .header { background: #1a73e8; color: white; padding: 16px; text-align: center; }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>⚖️ 法援通 - 法律援助智能助手</h1>
+  <p>主动询问案情 · 从实际出发解答 · 生成诉讼流程图</p>
+</div>
+<div id="coze-chat"></div>
+<script src="https://lf-cdn.coze.cn/obj/unpkg/flow-platform/chat-app-sdk/1.0.0-beta.4/libs/cn/index.js"></script>
+<script>
+new CozeWebSDK.WebChatClient({
+  config: { bot_id: '7649710237393797160' },
+  componentProps: {
+    title: '法援通 ⚖️',
+  },
+});
+</script>
+</body>
+</html>
